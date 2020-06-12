@@ -19,6 +19,7 @@ This is a basic project with kubernetes examples.
 
 ## Running NodeJS Deployment
 
+        eval $(minikube docker-env)
         docker build -t devsar-node:1.0 .
         kubectl create deployment devsar-node --image=devsar-node:1.0
         kubectl get deployments
