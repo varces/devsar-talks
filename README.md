@@ -49,5 +49,5 @@ This is a basic project with kubernetes examples.
         kubectl apply -f deployment-nginx-autoscaling.yaml      
 
 ## Running Stress script
-locust -f stress.py --host http://host:port 
+        locust -f stress.py --host http://host:port 
 
