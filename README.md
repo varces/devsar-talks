@@ -48,3 +48,6 @@ This is a basic project with kubernetes examples.
         minikube addons enable metrics-server
         kubectl apply -f deployment-nginx-autoscaling.yaml      
 
+## Running Stress script
+locust -f stress.py --host http://host:port 
+
