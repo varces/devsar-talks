@@ -1,0 +1,16 @@
+# Número de versión del api que se quiere utilizar
+apiVersion: v1
+# Tipo de fichero que se va a crear.
+kind: Service
+# Aquí van los datos propios del pod como el nombre y los labels que tiene asociados para seleccionarlo
+metadata:
+    name: my-nginx-service
+# Contiene la especificación del pod
+spec:
+    type: LoadBalancer
+    # En esta propiedad se indican todos los pods que apuntan a este servkice. En este caso, se va a encargar de todos los que tengan el valor "nginx" en el label "app"
+    selector:
+        app: nginx
+    ports:
+      # Indica el puerto en el que se debería de servir este servicio
+      - port: 80
