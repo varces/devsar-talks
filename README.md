@@ -26,7 +26,7 @@ This is a basic project with kubernetes examples.
         kubectl get pods
         kubectl expose deployment devsar-node --type=LoadBalancer --port=8080
         kubectl get services
-        minikube service hello-node
+        minikube service devsar-node
 
 ## Running simple POD
 
