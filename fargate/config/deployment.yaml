@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: python-api
-        image: completar
+        image: gcr.io/devsar-innovation-lab/hello-python:1.0
         ports:
           - containerPort: 8080
         resources: {}
