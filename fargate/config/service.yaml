@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: python-api
+  namespace: python-api
+spec:
+  selector:
+    app: python-api
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
