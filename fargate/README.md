@@ -54,10 +54,10 @@ Update cluster-name, vpc-id, aws-region, AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS
 - kubectl apply -f ingress.yaml
 
 ## Get Address
-kubectl describe ing -n python-api python-api
+- kubectl describe ing -n python-api python-api
 
 ## Delete Cluster
-eksctl delete cluster --region=us-east-2 --name devsar-cluster-fargate
+- eksctl delete cluster --region=us-east-2 --name devsar-cluster-fargate
 
 
 
