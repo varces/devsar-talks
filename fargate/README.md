@@ -17,7 +17,7 @@ This is a basic project with Fargate EKS examples.
 
 - eksctl create cluster --name devsar-cluster-fargate --version 1.16 --fargate
 
-Al añadir la opción --fargate al comando anterior se crea un clúster sin un grupo de nodos. 
+Adding the --fargate option to the above command creates a cluster without a group of nodes.
 
 ## Get VPC ID
 
